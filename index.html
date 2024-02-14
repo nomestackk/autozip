@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Auto ZIP</title>
+    <script src="renderer.js" defer></script>
+  </head>
+
+  <body class="center">
+    <main class="center column">
+      <!-- Status Section -->
+
+      <section class="status center column">
+        <h2>Status</h2>
+        <h3 id="status-display"><!-- Ativado/Desativado --></h3>
+        <p class="details" id="details"><!-- Informação adicional --></p>
+        <button id="restart">Recomeçar</button>
+        <button id="btn-settings">Configurações</button>
+      </section>
+
+      <!-- Settings Section -->
+
+      <section class="settings center column">
+        <h2>Configurações</h2>
+        <div class="grid">
+          <label for="name">Nome cliente:</label>
+          <input type="text" name="name" id="name" />
+          <label for="email">Email cliente:</label>
+          <input type="email" name="email" id="email" />
+          <label for="password">Senha de Aplicativo:</label>
+          <input type="password" name="password" id="password" />
+          <label for="cnpj">CNPJ cliente:</label>
+          <input type="text" id="cnpj" />
+          <label for="contabilidade">Email destinatário:</label>
+          <input type="email" name="contabilidade" id="contabilidade" />
+          <label for="cancelados-folder">Pasta cancelados:</label>
+          <button id="cancelados-folder">Escolher Pasta</button>
+          <label for="vendas-folder">Pasta vendas:</label>
+          <button id="vendas-folder">Escolher Pasta</button>
+        </div>
+
+        <a id="app-settings-link">Criar uma senha de aplicativo</a>
+        <div id="error-message"></div>
+        <button id="submit-settings">Concluir</button>
+      </section>
+    </main>
+  </body>
+</html>

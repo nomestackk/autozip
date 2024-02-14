@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  background-image: url("background.jpg");
+  background-size: cover;
+}
+
+/* Utility Classes */
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 8px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+label {
+  text-align: center;
+}
+
+button {
+  border-radius: 4px;
+  padding: 8px;
+  background: #333;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #444;
+}
+
+input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px;
+  background: #333;
+  color: white;
+  outline: none;
+  border: 1px #444 solid;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  padding: 8px;
+  border-bottom: 1px solid #333;
+}
+
+/* Main Classes */
+
+#credit {
+  position: absolute;
+  left: 2.5vw;
+  top: 2.5vh;
+}
+
+#error-message {
+  padding: 8px;
+  background-color: rgba(255, 0, 0, 0.25);
+  color: white;
+}
+
+#app-settings-link {
+  padding: 8px;
+  background-color: rgb(25, 50, 255, 0.25);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#app-settings-link:hover {
+  box-shadow: 0px 0px 10px rgb(50, 75, 255, 0.25);
+  background-color: rgb(50, 75, 255, 0.25);
+}
+
+#app-settings-link:visited {
+  color: white;
+}
+
+main {
+  min-width: 75%;
+  min-height: 75%;
+  color: white;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  padding: 16px;
+  border-radius: 8px;
+  flex-direction: row;
+  gap: 16px;
+}
+
+#status-display {
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.status,
+.settings {
+  width: 100%;
+  height: 100%;
+  gap: 12px;
+}
